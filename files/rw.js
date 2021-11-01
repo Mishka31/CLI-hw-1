@@ -2,11 +2,8 @@ const fs = require("fs/promises");
 const file = "../base/main.mjs";
 
 (async (fileName) => {
-  const file = await fs;
+  const file = await fs.readFile(fileName, 'utf8')
+  console.log(file);
+  await fs.mkdir('./temp')
+  await fs.writeFile('./temp/temp.js', `${file}console.log('Hello word')`) 
 })(file);
-
-const Obj = {
-  sadf: "sdf",
-  sdffs: "sdf",
-};
-Obj;
