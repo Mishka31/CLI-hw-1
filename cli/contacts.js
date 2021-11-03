@@ -20,7 +20,9 @@ return await readData()
 }
   
   function removeContact(contactId) {
-    // ...твой код
+    const contacts = await readData()
+    const [result] = contacts.filter(contact => contact.id === contactId)
+ return result
   }
   
   const addContact = async (name, email, phone) => {

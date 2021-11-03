@@ -1,6 +1,6 @@
 const { Command } = require('commander')
 const chalk = require('chalk')
-const { listContacts, addContact, getContactById } = require('./contacts')
+const { listContacts, addContact, getContactById, removeContact } = require('./contacts')
 
 const program = new Command();
 program
