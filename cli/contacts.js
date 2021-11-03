@@ -19,9 +19,15 @@ return await readData()
  return result
 }
   
-  function removeContact(contactId) {
+  const removeContact = async (contactId) => {
     const contacts = await readData()
-    const [result] = contacts.filter(contact => contact.id === contactId)
+
+    const [result] = contacts.filter(contact => contact.id !== contactId)
+    console.log(result);
+    // contacts.push(result)
+    const indexOfContact = contacts.indexOf(contact);
+    contacts.splice(indexOfContact, 1);
+    await fs.writeFile(FILE, JSON.stringify(result, null, 2))
  return result
   }
   
