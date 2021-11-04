@@ -14,7 +14,6 @@ program.parse(process.argv);
 
 const argv = program.opts();
 
-// TODO: рефакторить
 (async ({ action, id, name, email, phone }) => {
 
     try {    
@@ -29,7 +28,7 @@ const argv = program.opts();
            const getContact = await getContactById(id)
            if (getContact) {
             console.log(chalk.green('Contact found'))
-            console.log(getContact)
+            console.table(getContact)
            } else {
             console.log(chalk.yellow('Contact not found'))
            }
@@ -38,7 +37,7 @@ const argv = program.opts();
           case 'add':
             const contact = await addContact(name, email, phone)
             console.log(chalk.green('Add new contact'))
-            console.log(contact)
+            console.table(contact)
             break
       
           case 'remove':

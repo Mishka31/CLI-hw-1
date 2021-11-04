@@ -29,7 +29,7 @@ return await readData()
   
   const addContact = async (name, email, phone) => {
     const contacts = await readData()
-    const newContact = { id: Number(contacts.length), name, email, phone }
+    const newContact = { id: Number(contacts.length +1), name, email, phone }
     contacts.push(newContact)
     await fs.writeFile(contactsPath, JSON.stringify(contacts, null, 2))
     return newContact
