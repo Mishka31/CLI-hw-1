@@ -44,10 +44,10 @@ const argv = program.opts();
           case 'remove':
             const delContacts = await removeContact(id)
             if (delContacts) {
-                console.log(chalk.green('Contact deleted'))
+                console.log(chalk.green(`Contact "${id}" is deleted`))
                 console.table(delContacts)
                } else {
-                console.log(chalk.yellow('Contacts not found'))
+                console.log(chalk.yellow(`Contact "${id}" is missing`))
                }
             break;
       
