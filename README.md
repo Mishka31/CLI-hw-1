@@ -1,10 +1,4 @@
-https://ibb.co/K9q9PqZ - Get
-https://ibb.co/sqbzRT7 - Remove
-https://ibb.co/jwVM3XD - Add
-https://ibb.co/Wnwh4Yp - List
-
-
-[Get](https://ibb.co/K9q9PqZ)  
-[Remove](https://ibb.co/sqbzRT7)  
-[Add](https://ibb.co/jwVM3XD)  
-[List](https://ibb.co/Wnwh4Yp)  
+[Get contact](https://ibb.co/K9q9PqZ)  
+[Remove contact](https://ibb.co/sqbzRT7)  
+[Add contact](https://ibb.co/jwVM3XD)  
+[List of contacts](https://ibb.co/Wnwh4Yp)  
